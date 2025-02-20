@@ -386,4 +386,5 @@ def mathwork(item1: str, mode: str = 'RAD'):
 #
 # 计算试例  ∮∭∬∑±∫∰∯
 if __name__ == '__main__':
-    print(trans_to_RPN('9 - ( 1 * 10 + ( 3 + 1 ) ) '.split(' ')))
+    print(trans_to_RPN('1 - -4 + - ( 101 - 2 ) '.split(' ')))
+
