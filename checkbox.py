@@ -112,20 +112,20 @@ class CheckBox:
                         self.choices.append(o)
             if mode == 1:
                 if not auto_adjust:
-                    cancel = pygwidgets.TextButton(window, (self.x + 80, (self.y - first_y) + buttons_adjust_length), 'cancel',
+                    cancel = pygwidgets.TextButton(window, (self.x + 80, self.y+(self.y - first_y) + buttons_adjust_length), 'cancel',
                                                textColor=(0, 0, 0),
                                                upColor=self.button_up, overColor=self.button_over,
                                                downColor=self.button_down)
-                    done = pygwidgets.TextButton(window, (self.x - 30, (self.y - first_y) + buttons_adjust_length), 'done',
+                    done = pygwidgets.TextButton(window, (self.x - 30, self.y+(self.y - first_y) + buttons_adjust_length), 'done',
                                                  textColor=(0, 0, 0),
                                                  upColor=self.button_up, overColor=self.button_over,
                                                  downColor=self.button_down)
                 else:
-                    cancel = pygwidgets.TextButton(window, (self.x + 80, each_add_y*choice_num + buttons_adjust_length), 'cancel',
+                    cancel = pygwidgets.TextButton(window, (self.x + 80, self.y+each_add_y*choice_num + buttons_adjust_length), 'cancel',
                                                    textColor=(0, 0, 0),
                                                    upColor=self.button_up, overColor=self.button_over,
                                                    downColor=self.button_down)
-                    done = pygwidgets.TextButton(window, (self.x - 30, each_add_y*choice_num + buttons_adjust_length), 'done',
+                    done = pygwidgets.TextButton(window, (self.x - 30, self.y+each_add_y*choice_num + buttons_adjust_length), 'done',
                                                  textColor=(0, 0, 0),
                                                  upColor=self.button_up, overColor=self.button_over,
                                                  downColor=self.button_down)
