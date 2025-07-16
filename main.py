@@ -1016,7 +1016,8 @@ while True:
                                                                 'CANCEL', backgroundColor=(90, 90, 150),
                                                                 promptTextColor=(0, 0, 0),
                                                                 inputTextColor=(0, 0, 0))
-                            direction = CheckBox(3, ['+', '-', '+/-'], 1, window, clock, first_x=120, first_y=30, each_add_x=0, each_add_y=20)
+                            direction = CheckBox(3, ['+', '-', '+/-'], 1, window, clock, first_x=120, first_y=30,
+                                                 each_add_x=0, each_add_y=20)
                             limit = float(limit)
                             simpified_formula = sympy.sympify(formula)
                             if type(direction.clicked_choices) == str or direction.clicked_choices == []:
@@ -1071,7 +1072,7 @@ while True:
                    functions):  # ["sin","cos","tan",'arcsin',"arccos","arctan","log","in","root"]
                 func = 1
     if point:
-        line3.Buttons[0].enable()
+        line3.Buttons[0].button_is_enabled()
     else:
         line3.Buttons[0].disable()
     pygame.display.update()
